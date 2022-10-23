@@ -1,0 +1,50 @@
+
+<ion-content>
+  <div id="container">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registro</ion-card-title>
+    </ion-card-header>
+
+    <form>
+      <ion-item>
+        <ion-label position="stacked">Nombre: </ion-label>
+        <ion-input  type="text" name="nombre" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Apellido: </ion-label>
+        <ion-input  type="text" name="apellido" required></ion-input>
+      </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Rut: </ion-label>
+          <ion-input  type="text" name="Rut" required></ion-input>
+        </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Email: </ion-label>
+        <ion-input  type="Email" name="email" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Nro Telefónico: </ion-label>
+        <ion-input  type="number" name="telefono" required></ion-input>
+      </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Fecha Nacimiento: </ion-label>
+          <ion-input  type="date" name="fechaNacimiento" required></ion-input>
+        </ion-item>
+        <ion-item>
+        <ion-label position="stacked">Patente: </ion-label>
+        <ion-input  type="text" name="patente" required></ion-input>
+      </ion-item>
+
+      <br>
+      <ion-button expand="full" [routerLink]="['/home']" shape="round">Ingresar</ion-button>
+    </form>
+
+  </ion-card>
+</div>
+</ion-content>
+
+
+
+
+

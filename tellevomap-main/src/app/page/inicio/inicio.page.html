@@ -1,0 +1,24 @@
+
+  <app-latoolbar titulo="TellevoApp"></app-latoolbar>
+
+<ion-content>
+  <div class="contenedor">
+    <div class="logo"> 
+      <img class= "imagen-logo"src="./assets/imgs/logo.png" style="width: 15vh; height: 15vh "/>
+    </div>
+    <div class="titulo">¿Cómo deseas ingresar? </div>
+
+
+    <form>
+    <div class="botones">
+      <ion-button class="boton-pasajero" shape="round" color="primary" [routerLink]="['/login']">Pasajero</ion-button>
+      
+      <ion-button class="boton-conductor" shape="round"color="secondary" [routerLink]="['/login']">Conductor</ion-button>
+    </div>
+    </form>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+</ion-content>
+
+
+<app-footer></app-footer>

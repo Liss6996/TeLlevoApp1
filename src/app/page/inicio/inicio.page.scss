@@ -1,0 +1,29 @@
+.contenedor {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.botones {
+    display: flex ;
+    justify-content: center;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+
+.titulo {
+    margin-top:20px;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Lucida Sans';
+}
+
+.logo {
+    display:block;
+  
+  }
+  
+  .logo .imagen-logo {
+    justify-content: center;
+  }
+

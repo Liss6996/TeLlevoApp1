@@ -1,0 +1,63 @@
+
+<ion-content>
+  <div class="container">
+    <div class="titulo">Registrate </div>
+
+    <form class="formulario-Registro" method="POST" [formGroup]="registroForm" (ngSubmit)="datos(registroForm.value)">
+
+      <ion-item>        
+        <ion-label class="texto" position="stacked">Nombre: </ion-label>
+        <ion-input type="text" required formControlName="nombreUsuario"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="texto" position="stacked">Apellido: </ion-label>
+        <ion-input  type="text" required formControlName="apellidoUsuario"></ion-input>
+      </ion-item>
+    
+      <ion-item>        
+        <ion-label class="texto" position="stacked">Rut: </ion-label>
+        <ion-input  type="text" required formControlName="rutUsuario"></ion-input>   
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="texto" position="stacked">Email: </ion-label>
+        <ion-input  type="text" required formControlName="emailUsuario"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="texto" position="stacked">Nro Telefónico: </ion-label>
+        <ion-input  type="number" required formControlName="telefonoUsuario"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label class="texto" position="stacked">Fecha Nacimiento: </ion-label>
+          <ion-input  type="Date" required formControlName="fecnacUsuario"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="texto" position="stacked">Patente: </ion-label>
+        <ion-input  type="text" required formControlName="patenteUsuario"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="texto" position="stacked">Contraseña: </ion-label>
+        <ion-input  type="password" required formControlName="contraseniaUsuario"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="texto" position="stacked">Confirmar Contraseña: </ion-label>
+        <ion-input  type="password" required formControlName="confirmarContrasenia"></ion-input>
+      </ion-item>
+
+      <br>
+      <ion-button expand="full" shape="round"  (click)="guardar()">Registrar Usuario</ion-button>
+    </form>
+
+  </div>
+</ion-content>
+
+
+
+
+

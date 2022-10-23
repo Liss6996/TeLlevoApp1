@@ -1,0 +1,21 @@
+<app-latoolbar titulo="not found"></app-latoolbar>
+
+<ion-content>
+  <div class="container">
+    <div class="logo"> 
+      <img class= "imagen-logo"src="./assets/imgs/logo.png" style="width: 15vh; height: 15vh "/>
+   </div>
+
+   <div class="contenedor-texto">
+     <ion-label class="texto">Página no encontrada :( </ion-label>
+    </div>
+
+    <div class="contenedor-boton">
+     <ion-button class="btn-inicio" [routerLink]="['/inicio']">
+        <ion-icon class="btn-icono" slot="icon-only" name="home" ></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
+
+<app-footer></app-footer>
